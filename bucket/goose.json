@@ -1,0 +1,22 @@
+{
+    "version": "1.12.1",
+    "description": "Goose is a general-purpose AI agent created by Block, the parent company of Square, CashApp, and Tidal.",
+    "homepage": "https://github.com/block/goose",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/block/goose/releases/download/v1.12.1/goose-x86_64-pc-windows-gnu.zip",
+            "hash": "64a2219da95c5ac1910dbe522c69754072e789062299f6e64dbb8f706e857a00"
+        }
+    },
+    "extract_dir": "goose-package",
+    "bin": "goose.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/block/goose/releases/download/v$version/goose-x86_64-pc-windows-gnu.zip"
+            }
+        }
+    }
+}

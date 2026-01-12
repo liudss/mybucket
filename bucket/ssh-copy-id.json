@@ -1,0 +1,26 @@
+{
+    "version": "0.0.2",
+    "description": "Native implementation of ssh-copy-id",
+    "homepage": "https://github.com/liudss/ssh-copy-id-rs",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/liudss/ssh-copy-id-rs/releases/download/v0.0.2/ssh-copy-id-rs-windows-amd64.exe",
+            "hash": "ccfd44fb783df5f491379d161cf64e72424cf0ff034204a04a95cea590ddee16"
+        }
+    },
+    "bin": [
+        [
+            "ssh-copy-id-rs-windows-amd64.exe",
+            "ssh-copy-id"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/liudss/ssh-copy-id-rs/releases/download/v$version/ssh-copy-id-rs-windows-amd64.exe"
+            }
+        }
+    }
+}
